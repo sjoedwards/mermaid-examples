@@ -1,3 +1,3 @@
 # mermaid-examples
 
-![test](Test.draw.io)
+![test](Test.drawio)
