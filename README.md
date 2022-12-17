@@ -1,3 +1,3 @@
 # mermaid-examples
 
-![test](Test.drawio)
+![test](./SequenceDiagram.drawio.svg)
