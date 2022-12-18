@@ -1,3 +1,5 @@
-# mermaid-examples
+## Diagrams as Code Examples
 
-![test](./SequenceDiagram.drawio.svg)
+![drawio example](./SequenceDiagram.drawio.svg)
+
+!
