@@ -11,23 +11,23 @@ export const createChart = (userAuthenticated) => {
   `;
   if (!userAuthenticated) {
     return createDiagramWithBaseInfo(`
-    User -> Auth: Get access token
-    Auth -> User: 401 unauthorized
+    User ->> Auth: Get access token
+    Auth ->> User: 401 unauthorized
     `);
   }
 
   return createDiagramWithBaseInfo(`
-    User -> Auth: Get access token
-    Auth -> User: {access_token: {jwt}}
-    User -> BEFE: /homepage, {access_token}
-    BEFE -> GW: /api/user/me, {access_token}
-    GW -> GW: {validate JWT, extract claims}
-    GW -> UserAPI: /api/user/{id}, {claims, id}
-    UserAPI -> UserDB: Get user
-    UserDB -> UserAPI: {user}
-    UserAPI -> GW: {user}
-    GW -> BEFE: {user}
+    User ->> Auth: Get access token
+    Auth ->> User: {access_token: {jwt}}
+    User ->> BEFE: /homepage, {access_token}
+    BEFE ->> GW: /api/user/me, {access_token}
+    GW ->> GW: {validate JWT, extract claims}
+    GW ->> UserAPI: /api/user/{id}, {claims, id}
+    UserAPI ->> UserDB: Get user
+    UserDB ->> UserAPI: {user}
+    UserAPI ->> GW: {user}
+    GW ->> BEFE: {user}
     note over BEFE: Other requests here...
-    BEFE -> User: { ...homepage, user }
+    BEFE ->> User: { ...homepage, user }
   `);
 };

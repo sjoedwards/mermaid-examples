@@ -26,7 +26,6 @@ const Mermaid = ({ chart }) => {
   }, []);
 
   useEffect(() => {
-    loadMermaid();
     renderMermaid(chart, mermaidRenderTarget);
   }, [chart]);
 
