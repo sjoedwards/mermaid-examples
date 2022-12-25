@@ -26,7 +26,7 @@ function ScenarioSwitcher() {
     },
     {
       label: "Update Article",
-      value: "UPDATE_USER",
+      value: "UPDATE_ARTICLE",
     },
   ];
 
@@ -41,7 +41,11 @@ function ScenarioSwitcher() {
     setJourney(newJourney);
   };
 
-  const chart = createChart(userAuthenticated);
+  const chart = createChart(
+    userAuthenticated,
+    invalidPayloadSent,
+    journey.value
+  );
 
   return (
     <Container
