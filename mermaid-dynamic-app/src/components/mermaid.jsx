@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import mermaid from "mermaid";
-const loadMermaid = (themeCSS) => {
+const loadMermaid = () => {
   mermaid.initialize({
     startOnLoad: false,
     theme: "default",
