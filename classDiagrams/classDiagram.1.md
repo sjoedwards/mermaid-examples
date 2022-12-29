@@ -1,5 +1,6 @@
 ```mermaid
 classDiagram
+direction LR
 Owner "0..1" --> "*" Vehicle
 Vehicle <|-- Bicycle
 Vehicle <|-- MotorVehicle
