@@ -7,8 +7,8 @@ journey
       Select item: 3: First-time User, Repeat User
       Click on Checkout: 3: First-time User, Repeat User
     section Checkout
-      Enter user information: 3: First-time User
-      Enter card information: 3: First-time User
+      Enter user information: 2: First-time User
+      Enter card information: 1: First-time User
       Select previous payment method: 5: Repeat User
       Click Order: 3: First-time User
     section Confirmation
